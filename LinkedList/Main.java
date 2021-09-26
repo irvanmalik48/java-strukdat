@@ -1,4 +1,4 @@
-public class Main {
+class Main {
     public static void main(String[] args) {
         LinkedList list = new LinkedList();
 
@@ -22,6 +22,10 @@ public class Main {
 
         list.push(1.9f);
         list.push(1.5f);
+
+        System.out.println(list);
+
+        list.setValue(4, 2.0f);
 
         System.out.println(list);
         System.out.println(list.size());
