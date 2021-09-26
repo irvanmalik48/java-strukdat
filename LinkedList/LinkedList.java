@@ -22,8 +22,15 @@ public class LinkedList {
         this.length++;
     }
 
+    // Delete first index value
+    public void remove() {
+        if (this.head == null)
+            return;
+        this.head = this.head.getNode();
+    }
+
     // Delete value by index
-    public void delete(int index) {
+    public void remove(int index) {
         ListNode current = this.head, previous = null;
         int counter = 0;
 
@@ -99,6 +106,35 @@ public class LinkedList {
     // Get LinkedList length
     public int size() {
         return this.length;
+    }
+
+    // Convert to Array
+    public float[] toArray() {
+        float arr[] = new float[this.length];
+        int index = 0;
+        ListNode current = this.head;
+
+        while (current != null) {
+            arr[index] = current.getValue();
+            current = current.getNode();
+            index++;
+        }
+        return arr;
+    }
+
+    // Clear all values
+    public void clear() {
+        for (int i = 0; i < size(); i++)
+            remove();
+        this.length = 0;
+    }
+
+    // Check if list is empty
+    public boolean isEmpty() {
+        if (this.head == null)
+            return true;
+        else
+            return false;
     }
 
     // toString override
