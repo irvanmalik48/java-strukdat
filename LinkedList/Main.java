@@ -1,33 +1,34 @@
 class Main {
-    public static void main(String[] args) {
-        LinkedList list = new LinkedList();
 
-        list.add(1.2f);
-        list.add(2.4f);
-        list.add(3.6f);
-        list.add(4.8f);
-        list.add(6.0f);
-        list.add(7.2f);
+	public static void main(String[] args) {
+		LinkedList list = new LinkedList();
 
-        System.out.println(list);
+		list.add(1.2f);
+		list.add(2.4f);
+		list.add(3.6f);
+		list.add(4.8f);
+		list.add(6.0f);
+		list.add(7.2f);
 
-        list.pop();
+		System.out.println(list);
 
-        System.out.println(list);
-        System.out.println(list.getValue(3));
+		list.pop();
 
-        list.delete(1);
+		System.out.println(list);
+		System.out.println(list.getValue(3));
 
-        System.out.println(list);
+		list.delete(1);
 
-        list.push(1.9f);
-        list.push(1.5f);
+		System.out.println(list);
 
-        System.out.println(list);
+		list.push(1.9f);
+		list.push(1.5f);
 
-        list.setValue(4, 2.0f);
+		System.out.println(list);
 
-        System.out.println(list);
-        System.out.println(list.size());
-    }
+		list.setValue(4, 2.0f);
+
+		System.out.println(list);
+		System.out.println(list.size());
+	}
 }
