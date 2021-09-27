@@ -1,22 +1,23 @@
 class Main {
-  public static void main(String[] args) {
-    Point A = new Point(5,3);
 
-    int nilaiX = A.getX();
-    System.out.println(nilaiX);
-    System.out.println(A.getY());
+	public static void main(String[] args) {
+		Point A = new Point(5, 3);
 
-    A.setY(10);
+		int nilaiX = A.getX();
+		System.out.println(nilaiX);
+		System.out.println(A.getY());
 
-    A.mirrorX();
-    System.out.println(A.getX());
+		A.setY(10);
 
-    System.out.println(A);
+		A.mirrorX();
+		System.out.println(A.getX());
 
-    A.set(6, 8);
-    A.mirrorY();
-    A.mirrorAll();
-    // A = (8, 8);
-    System.out.println(A);
-  }
+		System.out.println(A);
+
+		A.set(6, 8);
+		A.mirrorY();
+		A.mirrorAll();
+		// A = (8, 8);
+		System.out.println(A);
+	}
 }
