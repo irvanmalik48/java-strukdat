@@ -24,6 +24,7 @@ public class LinkedList {
 	public void remove() {
 		if (this.head == null) return;
 		this.head = this.head.getNode();
+		this.length--;
 	}
 
 	// Delete value by index
