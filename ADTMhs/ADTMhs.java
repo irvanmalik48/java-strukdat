@@ -1,4 +1,4 @@
-//Buatlah ADTMhs yang memiliki atribut 
+//Buatlah ADTMhs yang memiliki atribut
 //nama : String
 //nim : String
 //angk : int
@@ -6,69 +6,69 @@
 //Implementasikan primitifnya
 
 class ADTMhs {
-    private String nama, nim;
-    private int angk;
 
-    public ADTMhs() {
-        this.nama = "Tidak ada nama";
-        this.nim = "Tidak ada NIM";
-        this.angk = 2005;
-    }
+	private String nama, nim;
+	private int angk;
 
-    public ADTMhs(String nama, String nim) {
-        this.nama = nama;
-        this.nim = nim;
-        this.angk = 2005;
-    }
+	public ADTMhs() {
+		this.nama = "Tidak ada nama";
+		this.nim = "Tidak ada NIM";
+		this.angk = 2005;
+	}
 
-    public ADTMhs(String nama, String nim, int angk) {
-        this.nama = nama;
-        this.nim = nim;
-        this.angk = angk;
-        validate();
-    }
+	public ADTMhs(String nama, String nim) {
+		this.nama = nama;
+		this.nim = nim;
+		this.angk = 2005;
+	}
 
-    public String getNama() {
-        return this.nama;
-    }
+	public ADTMhs(String nama, String nim, int angk) {
+		this.nama = nama;
+		this.nim = nim;
+		this.angk = angk;
+		validate();
+	}
 
-    public String getNim() {
-        return this.nim;
-    }
+	public String getNama() {
+		return this.nama;
+	}
 
-    public int getAngkatan() {
-        return this.angk;
-    }
+	public String getNim() {
+		return this.nim;
+	}
 
-    public void setAll(String nama, String nim, int angk) {
-        this.nama = nama;
-        this.nim = nim;
-        this.angk = angk;
-        validate();
-    }
+	public int getAngkatan() {
+		return this.angk;
+	}
 
-    public void setNama(String nama) {
-        this.nama = nama;
-    }
+	public void setAll(String nama, String nim, int angk) {
+		this.nama = nama;
+		this.nim = nim;
+		this.angk = angk;
+		validate();
+	}
 
-    public void setNim(String nim) {
-        this.nim = nim;
-    }
+	public void setNama(String nama) {
+		this.nama = nama;
+	}
 
-    public void setAngkatan(int angk) {
-        this.angk = angk;
-        validate();
-    }
+	public void setNim(String nim) {
+		this.nim = nim;
+	}
 
-    public void validate() {
-        if (this.angk < 2005)
-            this.angk = 2005;
-        else if (this.angk > 2021)
-            this.angk = 2021;
-    }
+	public void setAngkatan(int angk) {
+		this.angk = angk;
+		validate();
+	}
 
-    @Override
-    public String toString() {
-        return "[" + this.nama + ", " + this.nim + ", " + this.angk + "]";
-    }
+	public void validate() {
+		if (this.angk < 2005) this.angk = 2005; else if (
+			this.angk > 2021
+		) this.angk = 2021;
+	}
+
+	@Override
+	public String toString() {
+		return "[" + this.nama + ", " + this.nim + ", " + this.angk + "]";
+	}
 }
