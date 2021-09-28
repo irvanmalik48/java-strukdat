@@ -131,7 +131,7 @@ public class LinkedList {
 		ListNode current = this.head;
 		String temp = "";
 		while (current != null) {
-			temp += String.format("%.2f ", current.getValue());
+			temp += String.format("%.0f ", current.getValue());
 			current = current.getNode();
 		}
 		return temp;
